@@ -1,0 +1,58 @@
+echo "# Transient--Launcher" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/2062-anuj-thakur/Transient--Launcher.git
+git push -u origin main
+
+
+
+Okay so give me the skeleton code for my project also give me the gradle project struckture and files for intellij idea on ubuntu 18 ... Here's the basic properties...
+Min android lollipop. Uses kotlin. Name would be transient launcher. Package would be myth.transient.source
+Also make the following basic skeleton for now ... They should be in the following entey order. Like one page to another intnet jump you get it i believe no?
+
+Welcome screen -->
+Version + features screen -->
+Permissions screen --> ask and check for:
+Storage,
+install unknown apps
+floating popuop
+Notification control
+System settings control
+
+Final page that
+Ask if user wanna try restoring app positions from prev launcher's drawer and home screen limit them to 3 screenshots each. After that if more apps exists in drawer show them in normal format inshort separate the both. Again this would only work if the drawer is in slide up to down grid format. And the home is in left to right format.
+
+Then ask user to take screenshots and let them know that it would use local ocr capabilities to apply changes. Also to reduce complexity. Segregate the drawer and home screenshots. So that once selected for different types they couldn't be selected for another. In case of fallback just go with the default empty home screen and a to z drawer layout.
+
+After all that ... Launch directly to user home page. If the user opens drawer and goes back to home ask them if they wanna set my launcher as default one. If they click yes then open the change screen if they click no then never ask thwm again unless they manually change in the settings.
+
+Even if the user doesn't opens drawer show the above message only once nd only if my app isn't the default home screen
+
+The launcher should support:
+Widgets
+, folders in home
+Folders in drawer in form of a seperate tab.
+Custom icon packs ability
+Renaming app's ability
+And ofcourse ability to drag drop apps from drawer to home or any folder in home only
+Should update drawer on app installed removed update action
+While dragging only that apo should have touch and incase it wasnt places correctly it should be ignored. Incase the page is full then auto create a page and push that app automatically on that new page instead. Also Even if a page is empty don't remove it unless user does it himself.
+
+Also when user holds the empty screen it should show another menu:
+Create tab (max 5)
+Clear current tab (but not remove the tav itself just it's contents)
+change wallpaper (give user an option to pick)
+
+When any app is hold either in srawer folder or home. It should show a menu containing:
+Uninstall (if not system app)
+Hide
+Backup it's .apk
+Open / launch it
+Open it in app info settings
+Rename
+
+In drawer at top there should be a search bar, a folder tabs icon that hides apps list and only opens folders and a setting icon that redirects to my apps internal settings.
+
+Also if a folder in home's screenshot exist then just create an empty folder in Their place with correct name offcourse.
